@@ -5,7 +5,7 @@ public class Hindex {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] citations = {0,0,0,1,1};
+		int[] citations = {3,0,6,1,5};
 		int n=citations.length;
 		int cnt =0;
 		int answer =0;
@@ -16,6 +16,7 @@ public class Hindex {
 					cnt++;
 				}
 			}
+			System.out.println(cnt);
 			if(n<=cnt) {
 				answer=n;
 				break;

@@ -21,7 +21,7 @@ public class 귤고르기 {
 		for (int data : tangerine) {
 			hm.put(data, hm.get(data) + 1);
 		}
-	System.out.println(hm);
+		System.out.println(hm);
 		for (int data : hm.keySet()) {
 			System.out.println(data);
 			arr.add(hm.get(data));
@@ -30,7 +30,7 @@ public class 귤고르기 {
 		arr.sort(null);
 		while(true) {
 			sum+=arr.get(arr.size()-count-1);
-			if(sum>k) {
+			if(sum>=k) {
 				count++;
 				break;
 			} else {
